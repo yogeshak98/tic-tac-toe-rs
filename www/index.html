@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>tic-tac-toe</title>
+    <style>
+      body {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <h2>Tic Tac Toe</h1>
+    <br>
+    <div class="d-flex .justify-content-between">
+      <div class="p-2 bd-highlight">
+        <label>Difficulty</label>
+        <select name="difficulty" id="difficultyLevel">
+          <option value="EASY">Easy</option>
+          <option value="MODERATE" selected>Moderate</option>
+          <option value="HARD">Impossible</option>
+        </select>
+      </div>
+      <div class="gap">
+      </div>
+      <div class="p-2 bd-highlight">
+        <label>Who will start?</label>
+        <select name="player" id="firstPlayer">
+          <option value="HUMAN" selected>I'll Start</option>
+          <option value="AI">Let Comp start</option>
+        </select>
+      </div>
+    </div>
+    <br>
+    <canvas id="tic-tac-toe-canvas"></canvas>
+    <br>
+    <div class="d-flex .justify-content-between">
+      <div class="p-2 bd-highlight">
+        <select id="symbolToggler">
+          <option value="X" selected>use - X</option>
+          <option value="O">use - O</option>
+        </select>
+      </div>
+    </div>
+    <script src="./bootstrap.js"></script>
+  </body>
+</html>

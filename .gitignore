@@ -1,0 +1,7 @@
+/target
+/www/node_modules
+.history
+.vscode
+.DS_Store
+Cargo.lock
+node_modules/
